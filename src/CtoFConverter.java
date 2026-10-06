@@ -10,7 +10,7 @@ public class CtoFConverter {
         boolean done = false;
 
         do {
-            System.out.print("Enter the temperatur in Celsius: ");
+            System.out.print("Enter the temperature in Celsius: ");
 
             if (in.hasNextDouble()) {
                 celsius = in.nextDouble ();
@@ -21,10 +21,11 @@ public class CtoFConverter {
                 System.out.println("Invalid input: " + trash);
                 System.out.println("Please enter a valid number.");
             }
+
         } while (!done);
+
         double fahrenheit = (celsius * 9.0 / 5.0) + 32;
 
         System.out.printf("%.2f C = %.2f F\n", celsius, fahrenheit);
         }
     }
-}
